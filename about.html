@@ -25,30 +25,32 @@
     <section id="about">
         <h1>About Me</h1>
         <figure>
-            <!-- <img src="assets/images/placeholder-headshot.jpg" alt="Headshot" width="150"> -->
-            <img src="assets/images/blank-profile.jpg" alt="Headshot" width="150">
+            <picture>
+                <source srcset="assets/images/blank-profile.jpg" type="image/jpeg">
+                <img src="assets/images/blank-profile.jpg" alt="Headshot", width="150">
+            </picture>
             <figcaption>Placeholder image for headshot</figcaption>
         </figure>
-        <p>Hi, I'm Rachel! I'm a senior studying Computer Science at UC San Diego, passionate about building efficient and user-friendly web applications. With a strong foundation in software development and problem-solving, I'm eager to start my career as a Software Engineer. Welcome to my portfolio!</p>
+        <p>Hi, I'm <b>Rachel!</b> I'm a senior studying Computer Science at UC San Diego, passionate about building <em>efficient</em> and <em>user-friendly</em> web applications. With a strong foundation in software development and problem-solving, I'm eager to start my career as a Software Engineer. Welcome to my portfolio!</p>
     </section>
 
     <section id="background">
         <h2>Background</h2>
         <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Vestibulum eu tortor iaculis hac dapibus magna facilisis massa. Vulputate mattis luctus purus euismod aptent etiam. Dictumst fames tempus dignissim ut tempor? Cubilia at ultrices fames eu mus augue ridiculus arcu. Vel nullam mi pharetra ante bibendum torquent urna elit. Porttitor penatibus nibh fermentum enim neque ultrices imperdiet. Dictum maecenas per ante morbi quisque. Per vestibulum ornare class sodales ex ipsum mauris. Dui hac montes vulputate interdum ridiculus lorem nostra.</p>
         <blockquote>
-            “A good programmer is someone who always looks both ways before crossing a one-way street.” - Doug Linder
+            “A good programmer is someone who always looks both ways before crossing a one-way street.” - <cite>Doug Linder</cite>
         </blockquote>
     </section>
 
     <section id="skills">
         <h2>Skills & Interests</h2>
-        <ul>
+        <ol>
             <li>Front-End Development: HTML, CSS, JavaScript</li>
             <li>Database Management: MongoDB, Firebase</li>
             <li>Testing & Debugging: JUnit, Robot Framework</li>
             <li>Low-Level Programming: x86, ARM Assembly, SystemVerilog</li>
             <li>Software Engineering Concepts: Data Structures & Algorithms, Object-Oriented Programming, Agile Development</li>
-        </ul>
+        </ol>
     </section>
 
     <section id="fun-facts">
@@ -60,9 +62,36 @@
             <dt>Hobbies</dt>
             <dd>Indoor bouldering, badminton, and stargazing</dd>
 
-            <dt>Dream Job</dt>
-            <dd>Back-End Developer at a tech company</dd>
+            <dt>Favorite Color</dt>
+            <dd><span style="color:green">Green!</span></dd>
         </dl>
+    </section>
+
+    <section id="tech-stack">
+        <h2>Technology Experience</h2>
+        <table>
+            <caption>Technologies I've Worked With</caption>
+            <colgroup>
+                <col span="1">
+                <col span="1">
+            </colgroup>
+            <tr>
+                <th>Category</th>
+                <th>Technologies</th>
+            </tr>
+            <tr>
+                <td>Programming Languages</td>
+                <td>Java, Python, C, C++</td>
+            </tr>
+            <tr>
+                <td>Databases</td>
+                <td>MongoDB, Firebase</td>
+            </tr>
+            <tr>
+                <td>Developer Tools</td>
+                <td>Git, VS Code, Postman</td>
+            </tr>
+        </table>
     </section>
 
     <noscript>

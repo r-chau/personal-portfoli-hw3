@@ -70,9 +70,31 @@
                     <input type="email" id="email" name="email" required>
                     <br>
 
+                    <label for="reason">Reason for Contact:</label>
+                    <select id="reason" name="reason">
+                        <optgroup label="Professional">
+                            <option>Job Inquiry</option>
+                            <option>Collaboration</option>
+                        </optgroup>
+                        <optgroup label="Other">
+                            <option>General Question</option>
+                        </optgroup>
+                    </select>
+                    <br>
+
+                    <label for="topic">Topic:</label>
+                    <input type="text" id="topic" name="topic" list="topics">
+                    <datalist id="topics">
+                        <option value="Frontend Development">
+                        <option value="Backend Development">
+                        <option value="Cybersecurity">
+                        <option value="Machine Learning">
+                        <option value="Other">
+                    </datalist>
+                    <br>
+
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="4" required></textarea>
-                    <br>
 
                     <button type="submit">Send</button>
                 </fieldset>

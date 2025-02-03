@@ -9,6 +9,7 @@
 </head>
 <body>
     <header>
+        <h1>Contact Me</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -20,9 +21,70 @@
     </header>
 
     <main>
-        <h1>Welcome to My Portfolio!</h1>
-        <p>This is a placeholder text until I update my content.</p>
+        <section>
+            <h2>Get in Touch</h2>
+            <p><strong>Connect with me through the following platforms:</strong></p>
+            <hr>
+
+            <!-- LinkedIn -->
+            <article>
+                <h3>LinkedIn</h3>
+                <p>
+                    <a href="https://www.linkedin.com/in/rachel-chau-1940a91aa/" target="_blank">
+                        <strong>Visit my LinkedIn Profile</strong>
+                    </a>
+                </p>
+            </article>
+
+            <!-- Email -->
+            <article>
+                <h3>Email</h3>
+                <p>
+                    <i>Email me at:</i> 
+                    <code>rchau@ucsd.edu</code>
+                </p>
+            </article>
+
+            <!-- Resume Download -->
+            <article>
+                <h3>Download My Resume</h3>
+                <p>
+                    <a href="assets/Rachel_Chau_Resume.pdf" download><b>Click here to download my resume</b></a>
+                </p>
+            </article>
+
+        </section>
+
+        <!-- Contact Form -->
+        <section>
+            <h2>Contact Form</h2>
+            <form action="https://reqres.in/api/test" method="post">
+                <fieldset>
+                    <legend>Send me a message</legend>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <br>
+
+                    <button type="submit">Send</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <noscript>
+            <p>JavaScript is disabled. Some features may not work properly.</p>
+        </noscript>
+
     </main>
+    
 
     <footer>
         <p>Copyright © 2025</p>

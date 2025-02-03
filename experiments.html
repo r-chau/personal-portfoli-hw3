@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Experiments - Rachel's Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <h1>My Web Development Experiments</h1>
+        <h3> Here I will experiment with various usages of HTML tags</h3>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="experiments.html">Experiments</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="canvas-experiment">
+            <h3>Canvas + Script Experiment</h3>
+            <canvas id="myCanvas"></canvas>
+            <script>
+                let canvas = document.getElementById('myCanvas');
+                let ctx = canvas.getContext('2d');
+                ctx.fillStyle = 'green';
+                ctx.fillRect(0, 0, 80, 80);
+            </script>
+        </section>
+
+        <section id="svg-experiment">
+            <h3>SVG Experiment</h3>
+            <svg width="200" height="200">
+                <circle cx="100" cy="100" r="50" stroke="black" stroke-width="3" fill="red" />
+            </svg>
+        </section>
+
+        <section id="audio-experiment">
+            <h3>Audio Experiment</h3>
+            <audio controls>
+                <source src="assets/audio/test_audio.mp3" type="audio/mp3">
+            </audio>
+        </section>
+
+        <section id="video-experiment">
+            <h3>Video Experiment</h3>
+            <video controls>
+                <source src="assets/video/test_video.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <section id="template-experiment">
+            <h3>Template Experiment</h3>
+            <template id="my-template">
+                <h3>This is a template</h3>
+                <p>Content inside the template tag.</p>
+            </template>
+            <p>The template is here but will not show due to no JS rule.</p>
+        </section>
+
+        <section id="dialog-experiment">
+            <h3>Dialog Experiment</h3>
+            <dialog open>
+                <p>This is an open dialog box. It can be a pop up box if connected to a script.</p>
+            </dialog>
+        </section>
+        <br><br><br>
+
+        <section id="dfn-experiment">
+            <h3>DFN Experiment</h3>
+            <p><dfn>supercalifragilisticexpialidocious</dfn> means extraordinarily good or wonderful!</p>
+        </section>
+
+        <section id="kbd-experiment">
+            <h3>KBD Experiment</h3>
+            <p>Press <kbd>Ctrl</kbd> + <kbd>W</kbd> to close this tab.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Rachel Chau</p>
+    </footer>
+
+</body>
+</html>

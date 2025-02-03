@@ -12,6 +12,11 @@
 <body>
     <!-- Navigation Bar -->
     <header>
+        <hgroup>
+            <h1>Rachel Chau's Portfolio</h1>
+            <h2>Software Engineer in the Making</h2>
+        </hgroup>
+
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -31,7 +36,7 @@
 
         <section id="welcome-message">
             <h1>Welcome to My Portfolio!</h1>
-            <p>I'm Rachel, a senior Computer Science student at UC San Diego with a passion for web development and software engineering. I love solving problems, writing clean code, and building intuitive applications. Explore my portfolio to see my work!</p>
+            <p>I'm Rachel, a senior Computer Science student at <abbr title="University of California, San Diego">UCSD</abbr> with a passion for web development and software engineering. I love solving problems, writing clean code, and building intuitive applications. Explore my portfolio to see my work!</p>
         </section>
 
         <section id="bio">
@@ -52,6 +57,20 @@
                 <li>TKinter</li>
             </ul>
         </section>
+
+        <hello-world></hello-world>
+        <script>
+            // Define the custom element 'hello-world'
+            class HelloWorld extends HTMLElement {
+                constructor() {
+                    super();
+                    console.log("Hello world!"); // This will print to the console
+                }
+            }
+    
+            // Register the custom element
+            customElements.define('hello-world', HelloWorld);
+        </script>
 
         <noscript>
             <p>JavaScript is disabled. Some features may not work properly.</p>

@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Contact Me</title>
 </head>
 <body>
     <header>
-        <h1>Contact Me</h1>
+        <h1>Rachel Chau</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -26,32 +26,9 @@
             <p><strong>Connect with me through the following platforms:</strong></p>
             <hr>
 
-            <!-- LinkedIn -->
-            <article>
-                <h3>LinkedIn</h3>
-                <p>
-                    <a href="https://www.linkedin.com/in/rachel-chau-1940a91aa/" target="_blank">
-                        <strong>Visit my LinkedIn Profile</strong>
-                    </a>
-                </p>
-            </article>
-
-            <!-- Email -->
-            <article>
-                <h3>Email</h3>
-                <p>
-                    <i>Email me at:</i> 
-                    <code>rchau@ucsd.edu</code>
-                </p>
-            </article>
-
-            <!-- Resume Download -->
-            <article>
-                <h3>Download My Resume</h3>
-                <p>
-                    <a href="assets/Rachel_Chau_Resume.pdf" download><b>Click here to download my resume</b></a>
-                </p>
-            </article>
+            <p><a href="https://www.linkedin.com/in/rachel-chau-1940a91aa/" target="_blank">LinkedIn</a></p>
+            <p>Email: <a href="mailto:rchau@ucsd.edu">rchau@ucsd.edu</a></p>
+            <p><a href="assets/Rachel_Chau_Resume.pdf" download>Download Resume</a></p>
 
         </section>
 
@@ -70,20 +47,11 @@
                     <input type="email" id="email" name="email" required>
                     <br>
 
-                    <label for="reason">Reason for Contact:</label>
-                    <select id="reason" name="reason">
-                        <optgroup label="Professional">
-                            <option>Job Inquiry</option>
-                            <option>Collaboration</option>
-                        </optgroup>
-                        <optgroup label="Other">
-                            <option>General Question</option>
-                        </optgroup>
-                    </select>
-                    <br>
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" rows="4" required></textarea>
 
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <input type="hidden" id="possible_bot" name="possible_bot" value=true>
+                    <br>
 
                     <button type="submit">Send</button>
                 </fieldset>
